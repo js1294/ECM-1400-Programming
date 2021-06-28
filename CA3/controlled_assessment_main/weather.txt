@@ -1,0 +1,7 @@
+In Exeter,
+The temperature is: 4.67 degrees celsius.
+The real feel temperature is: -3.17 degrees celsius.
+The weather condition are currently Clouds.
+The wind speed is: 8.7 metres per second.
+The wind conditions are fresh breeze.
+The wind direction is west
