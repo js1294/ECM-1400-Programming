@@ -1,0 +1,8 @@
+In England
+Yesterday, the number of new cases was 17622 and the number of new deaths was 115
+The number of cumulative deaths are 66570
+The number of cumulative cases are 1531761
+The weekly average number of new cases was 13271
+The weekly average number of new deaths was 315
+The monthly average number of new cases was 15853
+The monthly average number of new deaths was 412

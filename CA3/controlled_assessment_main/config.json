@@ -1,0 +1,43 @@
+{
+"API-keys":{
+	"weather":"629c0b8fdea22b1351655967475ff291",
+	"news":"d8ed5c84b0a341dd919f84224ab71e1d"
+	},
+"Location":{
+	"countries":"GB",
+	"country":"England",
+	"city":"Exeter"
+	},
+"News":{
+	"keyword":"coronavirus",
+	"blacklist":["Daily Mail","The Sun"],
+	"whitelist":["BBC news","Telegraph.co.uk","The Guardian"]
+	},
+"Weather":{
+    "coordinates":"False",
+    "temperature":"True",
+    "feel":"True",
+    "max":"False",
+    "min":"False",
+    "description":"True",
+    "pressure":"False",
+    "humidity":"False",
+    "visibility":"False",
+    "wind":"True",
+    "sunrise_sunset":"False"
+    },
+"Covid":{
+    "daily":"True",
+    "weekly":"True",
+    "monthly":"True",
+    "deaths":"True",
+    "cumulative":"True"
+    },
+"Units":{
+    "temperature":"Celsius",
+    "pressure":"Millibar",
+    "distance":"Kilometre",
+    "wind":"Metre Per Second"
+    },
+"Delay":3600
+}
