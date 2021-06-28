@@ -1,0 +1,59 @@
+function(select characters)
+while there are less than 9 letters selected:
+    ask user to input 'c' for a consonant or 'v' for a vowel
+    if input is 'c':
+        generate random consonant from frequency representative set
+        add consonant to game letters
+    if input is 'v':
+        generate random vowel from frequency representative set
+        add vowel to game letters
+    else:
+        report invalid user input
+
+function(dictionary reader)
+open words.txt file
+for each line in the file:
+    remove newline formatting and hyphens from each line
+    store word as possible answer
+close words.txt file
+
+function(check guess)
+if user guess exists in possible answer words
+    sort letters from the user guess alphabetically
+    generate all combinations of game letters at the length of the user guess
+    for each combination of game letters:
+        sort combination of game letters alphabetically
+        if sorted user guess matches sorted combination of game letters:
+            return points as the length of user guess
+return points as zero
+
+function(word lookup)
+for each possible answer word:
+    sort possible answer alphabetically
+for look for matches with length starting at 9 and ending at 1:
+    generate combinations of game letters at the length of matches being searched for
+    for each combination of game letters:
+        sort combination of game letters alphabetically
+        for each sorted possible answer word:
+            if sorted combination of game letters match sorted possible answer word:
+                find corresponding word in possible answers
+                store word as a best answer
+    if there are any words in best answers:
+        return best answers
+return there are no possible answers
+
+START
+display welcome message
+generate game letters with function(select characters)
+display game letters and start the timer
+allow 30 seconds for user input
+if answer is input within 30 seconds:
+    extract all valid words from words.txt with function(dictionary reader)
+    calculate points scored by user using function(check guess)
+else:
+    user scores zero points
+report user's score
+check for best possible answers with function(word lookup)
+report best answers to user
+display game outro to user
+FINISH 
